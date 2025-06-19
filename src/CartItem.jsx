@@ -9,11 +9,19 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
- 
+    let total = 0;
+    cart.forEach(item => { // loops over every item in the cart
+    const numericCost = parseFloat(item.cost.substring(1)); // remove "$" and convert to number
+    total += numericCost * item.quantity; // add cost * quantity to total
+  });
+
+  return total;    
   };
 
+  // should be able to return to the plant listing page to continue shopping
   const handleContinueShopping = (e) => {
-   
+    e.preventDefault();
+    onContinueShopping(e); // Call the function passed from the parent component
   };
 
 
