@@ -255,9 +255,9 @@ function ProductList({ onHomeClick }) {
     };
 
     //functionality for adding a plant to the cart when the user selects the Add to Cart button
+    // This function will carry the details of that plant which user want to add in the cart
     const handleAddToCart = (product) => {
         dispatch(addItem(product)); // Dispatch the action to add the product to the cart (Redux action)
-
         setAddedToCart((prevState) => ({ // Update the local state to reflect that the product has been added
             ...prevState, // Spread the previous state to retain existing entries
             [product.name]: true, // Set the current product's name as a key with value 'true' to mark it as added
