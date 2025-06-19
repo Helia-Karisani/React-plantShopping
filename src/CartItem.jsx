@@ -19,14 +19,14 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   // should be able to return to the plant listing page to continue shopping
+  // "e" is the event object. It gets automatically passed to the event handler when we use it like this in JSX
   const handleContinueShopping = (e) => {
-    e.preventDefault();
+ //   e.preventDefault();
     onContinueShopping(e); // Call the function passed from the parent component
   };
 
-
-
   const handleIncrement = (item) => {
+
   };
 
   const handleDecrement = (item) => {
@@ -39,6 +39,10 @@ const CartItem = ({ onContinueShopping }) => {
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
   };
+
+  const handleCheckoutShopping = (e) => {
+    alert('Functionality to be added for future reference');
+};
 
   return (
     <div className="cart-container">
