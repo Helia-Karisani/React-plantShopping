@@ -38,10 +38,13 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleRemove = (item) => {
+    dispatch(removeItem(item.name));
   };
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
+      const numericCost = parseFloat(item.cost.substring(1)); // remove "$"
+      return (numericCost * item.quantity).toFixed(2); // two decimal places
   };
 
   const handleCheckoutShopping = (e) => {
