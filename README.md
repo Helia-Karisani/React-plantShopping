@@ -6,7 +6,8 @@ This is a **React + Redux** application for an online plant shop called *Paradis
 
 ## 🚀 Live Demo
 
-**[Click to view the deployed site]([https://helia-karisani.github.io/your-repo-name/](https://helia-karisani.github.io/React-plantShopping/))**
+**[Click to view the deployed site](https://helia-karisani.github.io/React-plantShopping/)**
+
 
 
 ---
