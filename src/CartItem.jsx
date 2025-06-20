@@ -11,7 +11,7 @@ const CartItem = ({ onContinueShopping }) => {
   const calculateTotalAmount = () => {
     let total = 0;
     cart.forEach(item => { // loops over every item in the cart
-    const numericCost = parseFloat(item.cost.substring(1)); // remove "$" and convert to number
+    const numericCost = parseFloat(item.cost); // remove "$" and convert to number
     total += numericCost * item.quantity; // add cost * quantity to total
   });
 
@@ -43,7 +43,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
-      const numericCost = parseFloat(item.cost.substring(1)); // remove "$"
+      const numericCost = parseFloat(item.cost); // remove "$"
       return (numericCost * item.quantity).toFixed(2); // two decimal places
   };
 
