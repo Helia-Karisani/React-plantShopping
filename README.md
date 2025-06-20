@@ -1,11 +1,12 @@
 
+
 # 🌿 Paradise Nursery Shopping Cart
 
 This is a **React + Redux** application for an online plant shop called *Paradise Nursery*. It allows users to browse a variety of houseplants, add them to a shopping cart, and manage their order before checkout.
 
 ## 🚀 Live Demo
 
-**[Click to view the deployed site](https://Helia-Karisani.github.io/repo-name/)**
+**[Click to view the deployed site](https://helia-karisani.github.io/your-repo-name/)**
 
 
 ---
@@ -26,7 +27,7 @@ This is a **React + Redux** application for an online plant shop called *Paradis
   * Increment / decrement quantity buttons
   * Delete item button
   * “Continue Shopping” button
-  * “Checkout” button (currently alerts a placeholder message)
+  * “Checkout” button (currently shows alert)
 
 ---
 
@@ -64,7 +65,7 @@ src/
 1. Clone your forked repo:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Helia-Karisani/your-repo-name.git
    cd your-repo-name
    ```
 
@@ -97,7 +98,7 @@ To deploy to GitHub Pages:
 2. In `package.json`, add:
 
    ```json
-   "homepage": "https://your-username.github.io/your-repo-name",
+   "homepage": "https://helia-karisani.github.io/your-repo-name",
    "scripts": {
      "predeploy": "npm run build",
      "deploy": "gh-pages -d dist"
@@ -131,4 +132,5 @@ To deploy to GitHub Pages:
 ## 🙋‍♀️ Author
 
 **Helia Karisani**
-[GitHub](https://github.com/Helia-Karisani)
+[GitHub Profile](https://github.com/Helia-Karisani)
+
