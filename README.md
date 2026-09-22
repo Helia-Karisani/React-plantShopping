@@ -1,10 +1,10 @@
 
 
-# 🌿 Paradise Nursery Shopping Cart
+# Paradise Nursery Shopping Cart
 
 This is a **React + Redux** application for an online plant shop called *Paradise Nursery*. It allows users to browse a variety of houseplants, add them to a shopping cart, and manage their order before checkout.
 
-## 🚀 Live Demo
+## Live Demo
 
 **[Click to view the deployed site](https://helia-karisani.github.io/React-plantShopping/)**
 
@@ -12,15 +12,15 @@ This is a **React + Redux** application for an online plant shop called *Paradis
 
 ---
 
-## 📦 Features
+## Features
 
-* 🌱 **Landing Page** with a navigation bar and “Get Started” button
-* 🪴 **Product Listing Page** that displays:
+* **Landing Page** with a navigation bar and “Get Started” button
+* **Product Listing Page** that displays:
 
   * Plant name, image, cost, description
   * “Add to Cart” button (disabled after adding)
   * Categorized sections (e.g., Aromatic and Medicinal Plants)
-* 🛒 **Cart Page** that supports:
+* **Cart Page** that supports:
 
   * Display of selected items
   * Per-item subtotal (quantity × unit cost)
@@ -32,7 +32,7 @@ This is a **React + Redux** application for an online plant shop called *Paradis
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 * React (functional components)
 * React Redux Toolkit
@@ -41,7 +41,7 @@ This is a **React + Redux** application for an online plant shop called *Paradis
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -61,7 +61,7 @@ src/
 
 ---
 
-## ⚙️ Getting Started Locally
+## Getting Started Locally
 
 1. Clone your forked repo:
 
@@ -86,7 +86,7 @@ src/
 
 ---
 
-## 🌐 Deployment Instructions
+## Deployment Instructions
 
 To deploy to GitHub Pages:
 
@@ -120,7 +120,7 @@ To deploy to GitHub Pages:
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * How to use Redux Toolkit for state management
 * Handling dynamic rendering with `map()`
@@ -130,7 +130,7 @@ To deploy to GitHub Pages:
 
 ---
 
-## 🙋‍♀️ Author
+## Author
 
 **Helia Karisani**
 [GitHub Profile](https://github.com/Helia-Karisani)
