@@ -1,41 +1,35 @@
-
-
 # Paradise Nursery Shopping Cart
 
-This is a **React + Redux** application for an online plant shop called *Paradise Nursery*. It allows users to browse a variety of houseplants, add them to a shopping cart, and manage their order before checkout.
+A **React + Redux** application for an online plant shop called *Paradise Nursery*. Users can browse houseplants, add them to a shopping cart, and manage their order before checkout.
 
 ## Live Demo
 
-**[Click to view the deployed site](https://helia-karisani.github.io/React-plantShopping/)**
-
-
+[helia-karisani.github.io/React-plantShopping](https://helia-karisani.github.io/React-plantShopping/)
 
 ---
 
 ## Features
 
-* **Landing Page** with a navigation bar and “Get Started” button
-* **Product Listing Page** that displays:
-
+* **Landing page** with a navigation bar and “Get Started” button
+* **Product listing page** that shows:
   * Plant name, image, cost, description
   * “Add to Cart” button (disabled after adding)
   * Categorized sections (e.g., Aromatic and Medicinal Plants)
-* **Cart Page** that supports:
-
+* **Cart page** that supports:
   * Display of selected items
   * Per-item subtotal (quantity × unit cost)
   * Overall total cart amount
   * Increment / decrement quantity buttons
   * Delete item button
   * “Continue Shopping” button
-  * “Checkout” button (currently shows alert)
+  * “Checkout” button (currently shows an alert)
 
 ---
 
 ## Technologies Used
 
 * React (functional components)
-* React Redux Toolkit
+* Redux Toolkit
 * JavaScript
 * CSS
 
@@ -48,12 +42,12 @@ src/
 │
 ├── components/
 │   ├── ProductList.jsx        // Displays all plants
-│   └── CartItem.jsx           // Manages the cart display & functionality
+│   └── CartItem.jsx           // Cart display and functionality
 │
 ├── redux/
 │   └── CartSlice.jsx          // Redux slice with add/remove/updateQuantity reducers
 │
-├── store.js                   // Configures Redux store
+├── store.js                   // Redux store
 ├── App.jsx                    // App router and page logic
 ├── main.jsx                   // Redux Provider setup
 └── index.css, *.css           // Styling
@@ -61,13 +55,13 @@ src/
 
 ---
 
-## Getting Started Locally
+## Running Locally
 
-1. Clone your forked repo:
+1. Clone the repo:
 
    ```bash
-   git clone https://github.com/Helia-Karisani/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Helia-Karisani/React-plantShopping.git
+   cd React-plantShopping
    ```
 
 2. Install dependencies:
@@ -82,58 +76,42 @@ src/
    npm run dev
    ```
 
-4. Open your browser to `http://localhost:5173/`
+4. Open `http://localhost:5173/`
 
 ---
 
-## Deployment Instructions
+## Deployment
 
-To deploy to GitHub Pages:
+The site is deployed to GitHub Pages with `gh-pages`:
 
-1. Install:
+`package.json`:
 
-   ```bash
-   npm install gh-pages --save-dev
-   ```
+```json
+"homepage": "https://helia-karisani.github.io/React-plantShopping",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
 
-2. In `package.json`, add:
+`vite.config.js`:
 
-   ```json
-   "homepage": "https://helia-karisani.github.io/your-repo-name",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
+```js
+base: "/React-plantShopping/",
+```
 
-3. In `vite.config.js`, add:
+Deploy with:
 
-   ```js
-   base: "/your-repo-name/",
-   ```
-
-4. Then deploy:
-
-   ```bash
-   npm run deploy
-   ```
+```bash
+npm run deploy
+```
 
 ---
 
 ## What I Learned
 
-* How to use Redux Toolkit for state management
-* Handling dynamic rendering with `map()`
+* Using Redux Toolkit for state management
+* Dynamic rendering with `map()`
 * Component interaction through props and event handlers
-* Parsing and computing values like subtotal and total cost
-* Proper deployment using GitHub Pages
-
----
-
-## Author
-
-**Helia Karisani**
-[GitHub Profile](https://github.com/Helia-Karisani)
-
-
-
+* Computing subtotal and total cost
+* Deploying with GitHub Pages
